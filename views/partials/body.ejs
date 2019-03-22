@@ -1,49 +1,54 @@
 <% include ./noscript %>
 
 <div id="header">
-    <div id="pizza"> <img src="./assets/pizza.jpg" alt="Pizzaaa" width="200" height="200"></div>
+    <div id="pizza"> <img src="./assets/pizza.png" alt="Pizzaaa" width="200" height="200"></div>
+
+    <div id="pizzaBGSlices">    
+        <div id="pizzaSlice1"> <img src="./assets/pizzapunt2.png" alt="Pizza Punt" width="100" height="100"></div>
+        <div id="pizzaSlice2"> <img src="./assets/pizzapunt2.png" alt="Pizza Punt" width="100" height="100"></div>
+        <div id="pizzaSlice3"> <img src="./assets/pizzapunt2.png" alt="Pizza Punt" width="100" height="100"></div>
+    </div>
 
 
+    </div>
+    <form action="/" method="POST"> 
     <div class="title">
-    <h3>Choose a Finished Pizza Or make your Own!</h3>
-    </div>
-    
-
-
-    </div>
-    <form action="/" method="POST">
-        <div id="kantEnKlaar">
+                <h3>Choose a Finished Pizza Or make your Own!</h3>
+            </div>
+                
+        <div id="kantEnKlaar">   
+       
             <div class="selectPizza"><p>Salami</p>
-                <input type="radio"id="pizzaSalami" name="pizza" class="pizzaBoxes" value="salami">
+                <input tabindex="0" type="radio" id="pizzaSalami" name="pizza" class="pizzaBoxes" value="salami">
                 <label for="pizzaSalami"><img src="./assets/pizzapunt.png" alt="Pizzaaa" width="75" height="75"></label>
             </div>
             
 
             <div class="selectPizza"><p>Fish</p>
-                <input type="radio"id="pizzaFish" name="pizza" class="pizzaBoxes" value="fish">
+                <input tabindex="0" type="radio"id="pizzaFish" name="pizza" class="pizzaBoxes" value="fish">
                 <label for="pizzaFish"><img src="./assets/pizzapunt.png" alt="Pizzaaa" width="75" height="75"></label>
             </div>
             
             <div class="selectPizza"><p>Americana</p>
-                <input type="radio"id="pizzaAmericana" name="pizza" class="pizzaBoxes" value="Americana">
+                <input tabindex="0" type="radio"id="pizzaAmericana" name="pizza" class="pizzaBoxes" value="Americana">
                 <label for="pizzaAmericana"><img src="./assets/pizzapunt.png" alt="Pizzaaa" width="75" height="75"></label>
             </div>
             
             
             <div class="selectPizza"><p>Margerita</p>
-                <input type="radio"id="pizzaMargerita" name="pizza" class="pizzaBoxes" value="Margerita">
+                <input tabindex="0" type="radio"id="pizzaMargerita" name="pizza" class="pizzaBoxes" value="Margerita">
                 <label for="pizzaMargerita"><img src="./assets/pizzapunt.png" alt="Pizzaaa" width="75" height="75"></label>
             </div>
 
         </div>
-
-        <button type="submit">CheckOut</button>
+         
+        <button tabindex="0" type="submit">CheckOut</button>
     
     </form>
 
     <div id="zelfSamenstellen">
     <div class="title">
-    <h3>Start Designing your Pizza Today!</h3>
+    <h4>Create Your Own Pizza Using Our Delicious Fresh Ingredients</h4>
     </div>
 
     <form action="/zelfMaken" method="POST">
@@ -51,28 +56,28 @@
     <div id="selectIngredients">
     
     <div class="singleIngredient"> 
-        <input type="checkbox" id="sauce" class="ingredients" name="ingredient" value="sauce">
+        <input tabindex="0" type="checkbox" id="sauce" class="ingredients" name="ingredient" value="sauce">
         <label for="sauce"><img src="./assets/sauce.png" alt="sauce" width="75" height="75"></label>
     </div>
 
     <div class="singleIngredient"> 
-        <input type="checkbox" id="salami" class="ingredients" name="ingredient" value="salami">
+        <input tabindex="0" type="checkbox" id="salami" class="ingredients" name="ingredient" value="salami">
         <label for="salami"><img src="./assets/salami.png" alt="salami" width="150" height="75"></label>
     </div>
 
     <div class="singleIngredient"> 
-        <input type="checkbox" id="cheese" class="ingredients" name="ingredient" value="cheese">
+        <input tabindex="0" type="checkbox" id="cheese" class="ingredients" name="ingredient" value="cheese">
         <label for="cheese"><img src="./assets/cheese.png" alt="cheese" width="75" height="75"></label>
     </div>
 
     <div class="singleIngredient"> 
-        <input type="checkbox" id="bellPepper" class="ingredients" name="ingredient" value="bellPepper">
+        <input tabindex="0" type="checkbox" id="bellPepper" class="ingredients" name="ingredient" value="bellPepper">
         <label for="bellPepper"><img src="./assets/bellpepper.png" alt="bellpepper" width="75" height="75"></label>
     </div>
 
     </div>
+    <button tabindex="0" type="submit">CheckOut</button>
 
-    <button type="submit">CheckOut</button>
 
 
     </form>

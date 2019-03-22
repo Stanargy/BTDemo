@@ -9,4 +9,29 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+#pizzaBGSlices{
+   opacity: 0.2;
+}
+}
+@media only screen and (max-width: 300px) {
+
+ #kantEnKlaar{
+    grid-template-columns: 1fr;
+
+ }
+
+ #selectIngredients{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+input[type="checkbox"]:checked + label{
+   opacity: 1;
+   transform: scale(1.4);
+}
+input[type="radio"]:checked + label{
+   transform: scale(1.4);
+   
+}
 }

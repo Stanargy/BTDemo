@@ -5,39 +5,91 @@ body{
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
 text-align: center;
+background: #fffa8a;
 
 }
 
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 20px;
+}
+
+button{
+    transform: scale(1.5);
+    background-color: 	#dba24a;
+}
+
 #header{
-    background: #fff;
     width: 100vw;
     height: 40vh;
 
-    margin-top: 10px;
+    margin-top: 100px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    box-shadow: 0px -30px 121px 20px rgba(0,0,0,0.75);
+    border-bottom: 5px solid #e1d800;
 }
 
 #pizza{
-    border: 10px solid green;
-}
-.title{
+    padding-top: 15px;
+    animation: rotatePizza 14s 1 ease-in-out;
 
+}
+
+#pizzaBGSlices{
+    position: absolute;
+    animation: rotatePizzaSlice 3s 1 ease-in-out forwards;
+    z-index: -10;
+}
+
+#pizzaSlice1{
+    margin-left: 25vw;
+}
+#pizzaSlice2{
+    margin-left: 20vw;
+    margin-top: 20vh;
+    opacity: 0;
+}
+#pizzaSlice3{
+    margin-left: -10vw;
+    margin-top: 15vw;
+}
+
+.pizzaBoxes{
+    box-shadow: 0px -30px 121px 20px rgba(0,0,0,0.75);
 }
 
 .selectPizza{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    border-bottom: 3px solid orange;
+    border-bottom: 3px solid #e1d800;
+    margin-left: -200vw;
+    animation: moveIn 2s 1 ease-out forwards 2s;
+}
+
+.selectPizza:hover{
+    background-color: #fff767; 
+    border-radius: 50px;   
+    transition: 0.2s;
+    
+}
+
+.selectPizza:focus{
+    border-bottom: 3px solid #e12301;
+
 }
 
 .singleIngredient label{
     opacity: 0.5;
+    margin-left:-200vw;
+    animation: moveIn 2s 1 ease-out forwards 3s;
 }
 
 input[type="checkbox"],
@@ -51,14 +103,20 @@ input[type="radio"]{
     grid-template-rows: 1fr 1fr;
 }
 
+#selectIngredients div:hover{
+    background: #dbbf94;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
 
 input[type="checkbox"]:checked + label{
-   opacity: 1;
+    opacity: 1;
+    transform: scale(2);
 }
 input[type="radio"]:checked + label{
-    border: 2px solid red;
-    transform: scale(1.2);
-    background: orange;
+    transform: scale(2);
+    
 }
 
 label{
@@ -71,20 +129,24 @@ label{
 }
 
 #kantEnKlaar{
-    background: beige;
     width: 80vw;
     height: 30vh;
     margin: 0vw 10vw;
-
-
+    
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    border-right: 5px solid #e12301;
+    border-left: 5px solid 	#e12301;
+
+
 }
 
 #zelfSamenstellen{
-    background: green;
+    background: #dba24a;
     width: 100vw;
     height: 30vh;
 }
+
 
