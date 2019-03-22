@@ -43,5 +43,5 @@ Data is being collected through server side javascript and makes it possible for
 - [ ] Fix: Tabbing doesn't apply css :focus styles (wanted to add more visual feedback when focussing on different items)
 
 ## Audit
-![Audit](./public/assets/audit.jpg "This is the result of audit of '/' on 22-03-2019 ")
+![Audit](./public/assets/audit.JPG "This is the result of audit of '/' on 22-03-2019 ")
 
