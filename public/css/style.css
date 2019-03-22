@@ -81,20 +81,28 @@ button{
     
 }
 
-.selectPizza:focus{
-    border-bottom: 3px solid #e12301;
+label:focus{
+    border-color: red;
 
 }
+
 
 .singleIngredient label{
     opacity: 0.5;
     margin-left:-200vw;
-    animation: moveIn 2s 1 ease-out forwards 3s;
+    animation: moveIn 2s 1 ease-out forwards 2s;
 }
 
 input[type="checkbox"],
 input[type="radio"]{
-    display: none;
+ opacity: 0;
+
+}
+
+/* NEED 2FIX */
+input[type="checkbox"],
+input[type="radio"]:focus{
+  background-color: red; 
 }
 
 #selectIngredients{
@@ -113,6 +121,7 @@ input[type="radio"]{
 input[type="checkbox"]:checked + label{
     opacity: 1;
     transform: scale(2);
+    border-color: green;
 }
 input[type="radio"]:checked + label{
     transform: scale(2);

@@ -11,6 +11,7 @@ This is a single page web appication. oba-r
 4. [DATA](#4-DATA)
 5. [Design decisions](#5-Design-Decisions)
 6. [To-do](#6-To-do)
+7. [Audit](#7-Audit)
 
 ## 1. Live Demo
 Still under construction. 
@@ -39,3 +40,8 @@ Data is being collected through server side javascript and makes it possible for
 - [X] Font-family that has covers fallbacks for all devices
 - [ ] Optimize for broadband connections.
 - [ ] Add some additional features width client-side javascript?
+- [ ] Fix: Tabbing doesn't apply css :focus styles (wanted to add more visual feedback when focussing on different items)
+
+## Audit
+![Audit](./public/assets/audit.jpg "This is the result of audit of '/' on 22-03-2019 ")
+
