@@ -35,7 +35,7 @@ Data is being collected through server side javascript and makes it possible for
 ## To-do
 - [ ] Setup localStorage in serverside javascript
 - [ ] Add Support for tabbing when Mouse/trackpad is disabled
-- [X] Added <noscript> tag that deletes itself when client-side Javascript is enabled.
+- [X] Added HTML-noscript tag that deletes itself when client-side Javascript is enabled.
 - [X] Font-family that has covers fallbacks for all devices
 - [ ] Optimize for broadband connections.
 - [ ] Add some additional features width client-side javascript?
