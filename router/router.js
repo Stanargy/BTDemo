@@ -9,12 +9,13 @@ router.get('/about', about)
 
 router.get('/*', notFound)
 
-router.post('/', postPizza)
+router.post('/klaar', postPizza)
 router.post('/zelfMaken', zelfMaken)
 
 
 function postPizza(req, res){
     const pizzaList= req.body.pizza
+    // console.log(req.body)
     res.render('checkOut', {
         myPizza: pizzaList
     })
@@ -22,7 +23,7 @@ function postPizza(req, res){
 }
 function zelfMaken(req, res){
     const pizzaList= req.body.ingredient
-    console.log(req.body)
+    // console.log(req.body)
     res.render('checkOutU', {
         myPizza: pizzaList
     })
